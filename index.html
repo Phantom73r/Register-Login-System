@@ -29,17 +29,17 @@
         </div>
       </div>
  </div>
- <div id="signUpPage" class="row g-3 ">
+ <div id="signUpPage" class="row ">
     <div class="col-12 d-flex justify-content-center align-items-center">
         <div id="formAlert" class="alert w-100 alert-danger d-none">Form Invalid</div>
-        <div class="item bg-danger-subtle p-3 ">
+        <div class="item bg-danger-subtle p-3">
             <input type="text" id="name" placeholder="Enter your name" oninput="validateForm(this)" class="form-control mb-4">
             <input type="email" id="signUpEmail" placeholder="Enter your email" oninput="validateForm(this)" class="form-control mb-4">
             <input type="password" id="signUpPassword" placeholder="Enter your password" oninput="validateForm(this)" class="form-control mb-4">
             <button class="btn btn-outline-success w-100" id="submitBtn"> Register</button>
 
-            <div class="alert alert-success mt-4 w-25 mx-auto text-center d-none">Registered successfully</div>
-            <div id="userExist" class="alert alert-danger mt-4 w-25 mx-auto text-center d-none">User Exists!!</div>
+            <!-- <div class="alert alert-success mt-4 w-25 mx-auto text-center d-none">Registered successfully</div> -->
+            <div id="userExist" class="alert w-100 alert-danger d-none text-center mt-3">User Exists!!</div>
             <h5 class="pt-4">Need to Sign in? <a id="loginBtn" href="#">Click here</a> </h5>
             
         </div>
