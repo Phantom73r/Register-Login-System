@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register/Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<main>
+
+    <div class="container mt-4 ">
+      <div class="row position-absolute start-50 top-50 translate-middle">
+         <div id="signIn" class="d-none border-1 p-3 shadow-lg bg-primary-subtle">
+        <div class="col-12">
+            <div class="item">
+                <input type="email" id="signInEmail" placeholder="Enter your email" class="form-control mb-4">
+                <input type="password" id="signInPassword" placeholder="Enter your password" class="form-control mb-4">
+                <button id="signInBtn" class="btn btn-outline-success w-100"> Sign In</button>
+                <div id="failed" class="alert alert-danger mt-4 mx-auto text-center d-none">The Email or the password you entered is incorrect </div>
+                <h5 class="pt-4">Need to Sign up? <a id="signUpBtn" href="#">Click here</a> </h5>
+                
+            </div>
+        </div>
+      </div>
+ </div>
+ <div id="signUpPage" class="row position-absolute start-50 top-50 translate-middle border border-1 p-3 shadow-lg bg-danger-subtle ">
+    <div class="col-12">
+        <div id="formAlert" class="alert w-100 alert-danger d-none">Form Invalid</div>
+        <div class="item">
+            <input type="text" id="name" placeholder="Enter your name" oninput="validateForm(this)" class="form-control mb-4">
+            <input type="email" id="signUpEmail" placeholder="Enter your email" oninput="validateForm(this)" class="form-control mb-4">
+            <input type="password" id="signUpPassword" placeholder="Enter your password" oninput="validateForm(this)" class="form-control mb-4">
+            <button class="btn btn-outline-success w-100" id="submitBtn"> Register</button>
+
+            <div class="alert alert-success mt-4 w-25 mx-auto text-center d-none">Registered successfully</div>
+            <div id="userExist" class="alert alert-danger mt-4 w-25 mx-auto text-center d-none">User Exists!!</div>
+            <h5 class="pt-4">Need to Sign in? <a id="loginBtn" href="#">Click here</a> </h5>
+            
+        </div>
+    </div>
+  </div>
+ 
+</main>
+
+
+
+    <script src="JS/index.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
