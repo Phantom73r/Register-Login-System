@@ -14,11 +14,11 @@
 <body>
 <main>
 
-    <div class="container mt-4 ">
-      <div class="row position-absolute start-50 top-50 translate-middle">
-         <div id="signIn" class="d-none border-1 p-3 shadow-lg bg-primary-subtle">
-        <div class="col-12">
-            <div class="item">
+    <div class="container position-absolute top-50 start-50 translate-middle mt-4">
+      <div class="row g-3">
+         <div id="signIn" class="d-none ">
+        <div class="col-12 d-flex justify-content-center align-items-center ">
+            <div class="item border-1 shadow-lg bg-primary-subtle p-3 ">
                 <input type="email" id="signInEmail" placeholder="Enter your email" class="form-control mb-4">
                 <input type="password" id="signInPassword" placeholder="Enter your password" class="form-control mb-4">
                 <button id="signInBtn" class="btn btn-outline-success w-100"> Sign In</button>
@@ -29,10 +29,10 @@
         </div>
       </div>
  </div>
- <div id="signUpPage" class="row position-absolute start-50 top-50 translate-middle border border-1 p-3 shadow-lg bg-danger-subtle ">
-    <div class="col-12">
+ <div id="signUpPage" class="row g-3 ">
+    <div class="col-12 d-flex justify-content-center align-items-center">
         <div id="formAlert" class="alert w-100 alert-danger d-none">Form Invalid</div>
-        <div class="item">
+        <div class="item bg-danger-subtle p-3 ">
             <input type="text" id="name" placeholder="Enter your name" oninput="validateForm(this)" class="form-control mb-4">
             <input type="email" id="signUpEmail" placeholder="Enter your email" oninput="validateForm(this)" class="form-control mb-4">
             <input type="password" id="signUpPassword" placeholder="Enter your password" oninput="validateForm(this)" class="form-control mb-4">
