@@ -1,10 +1,10 @@
-var newUser=localStorage.getItem('logged');
+
 var WelcomeMessage=document.getElementById('welcomeMessage')
 var logOutBtn=document.getElementById('logOut')
 
 
 
-if(newUser){
+if(localStorage.getItem('logged')){
            WelcomeMessage.innerHTML=`Welcome, ${newUser}`
 
 }else{
