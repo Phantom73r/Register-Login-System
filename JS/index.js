@@ -16,17 +16,19 @@ var userExists=document.getElementById('userExist')
 var navbar=document.querySelector('#navBar')
 var homePage=document.querySelector('#homePage')
 
+if(localStorage.getItem('logged')){
+       window.location='./home.html'
+}
 
 
 if(localStorage.getItem('users')){
       var users=JSON.parse(localStorage.getItem('users'))
-
-       
- 
-       
 }else{
        users=[]
 }
+
+console.log(users);
+
 function setData(){
 
 if(nameInput.classList.contains('is-valid')&&emailInput.classList.contains('is-valid')&&passwordInput.classList.contains('is-valid')){

@@ -6,6 +6,7 @@ var logOutBtn=document.getElementById('logOut')
 
 if(newUser){
            WelcomeMessage.innerHTML=`Welcome, ${newUser}`
+
 }else{
     window.location='./index.html'
 }
